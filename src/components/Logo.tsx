@@ -1,13 +1,17 @@
 /** @jsx jsx */
 import { jsx, Box } from "theme-ui";
-import { FC } from "react";
 
-const Logo: FC = () => {
+interface Props {
+  fontSize?: number;
+  color?: string;
+}
+
+const Logo = ({ fontSize, color }: Props) => {
   return (
     <Box
       sx={{
-        color: "rgba(255, 255, 255, 0.5)",
-        fontSize: 4,
+        color: color || "rgba(255, 255, 255, 0.5)",
+        fontSize: fontSize || 4,
         letterSpacing: 0,
         fontWeight: "body",
       }}
