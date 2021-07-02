@@ -5,8 +5,9 @@ import { jsx, Flex, Heading, Paragraph } from "theme-ui";
 import Logo from "../Logo";
 import Wave from "./Wave";
 import { Menu, MenuItem } from "./styled";
+import { TMenuItem } from "./types";
 
-const menuItems = [
+const menuItems: TMenuItem[] = [
   {
     title: "join",
     path: "join",
