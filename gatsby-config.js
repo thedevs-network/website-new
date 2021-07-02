@@ -4,13 +4,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-module-resolver",
-      options: {
-        root: "./src",
-      },
-    },
+    // "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-typescript`,
       options: {

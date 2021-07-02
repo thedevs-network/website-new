@@ -1,13 +1,14 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
 
+import MainWrapper from "../components/MainWrapper";
 import Header from "../components/Header";
 
 const IndexPage = () => {
   return (
-    <main sx={{ backgroundColor: "#f5f5f5" }}>
+    <MainWrapper>
       <Header />
-    </main>
+    </MainWrapper>
   );
 };
 
