@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Fragment } from "React";
-import { jsx, Flex } from "theme-ui";
+import { jsx, Flex, Heading, Paragraph } from "theme-ui";
 
 import Logo from "../Logo";
 import Wave from "./Wave";
@@ -30,7 +30,7 @@ const Header = () => {
     <Fragment>
       <Flex
         sx={(theme) => ({
-          justifyContent: "space-between",
+          flexDirection: "column",
           position: "relative",
           background: `linear-gradient(90deg, ${theme.colors.gradientPrimary}, ${theme.colors.gradientSecondary})`,
           width: "100%",
@@ -40,13 +40,40 @@ const Header = () => {
           px: [3, 4, 5, 6],
         })}
       >
-        <Logo />
+        {/* Topbar */}
+        <Flex sx={{ justifyContent: "space-between", alignItems: "center" }}>
+          <Logo />
 
-        <Menu>
-          {menuItems.map((item) => (
-            <MenuItem key={item.path}>{item.title}</MenuItem>
-          ))}
-        </Menu>
+          <Menu>
+            {menuItems.map((item) => (
+              <MenuItem key={item.path}>
+                <a href={item.path}>{item.title}</a>
+              </MenuItem>
+            ))}
+          </Menu>
+        </Flex>
+
+        {/* Logo and Name */}
+        <Flex
+          sx={{
+            justifyContent: "center",
+            alignItems: "center",
+            color: "white",
+            marginTop: "50px",
+          }}
+        >
+          <Logo fontSize={8} color="white" />
+
+          <Flex sx={{ flexDirection: "column", marginLeft: "20px" }}>
+            <Heading as="h1" sx={{ fontWeight: "500" }}>
+              The Devs
+            </Heading>
+
+            <Paragraph sx={{ marginTop: "15px", fontWeight: "300" }}>
+              developers community on Telegram
+            </Paragraph>
+          </Flex>
+        </Flex>
       </Flex>
       <Wave />
     </Fragment>
