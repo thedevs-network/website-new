@@ -69,9 +69,9 @@ const Header = () => {
             textAlign: ["center", "left"],
           }}
         >
-          <Logo fontSize={8} color="white" />
+          <Logo size={80} color="white" />
 
-          <Flex sx={{ flexDirection: "column", marginLeft: ["0", "20px"] }}>
+          <Flex sx={{ flexDirection: "column", marginLeft: ["0", "25px"] }}>
             <Heading as="h1" sx={{ fontWeight: "500" }}>
               The Devs
             </Heading>

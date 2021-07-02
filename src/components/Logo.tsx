@@ -2,25 +2,32 @@
 import { jsx, Box, ThemeUIStyleObject } from "theme-ui";
 
 interface Props {
-  display?: string | string[];
-  fontSize?: number;
+  size?: number;
   color?: string;
+  display?: string | string[];
 }
 
-const Logo = ({ fontSize, color, display }: Props) => {
+const Logo = ({ size = 25, color, display }: Props) => {
   return (
     <Box
       sx={{
         display,
-        color: color || "rgba(255, 255, 255, 0.5)",
-        fontSize: fontSize || 4,
+        height: `${size}px`,
+        width: `${size}px`,
         letterSpacing: 0,
         fontWeight: "body",
       }}
-      as="p"
       // TODO: label
     >
-      //
+      <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 76 62"
+        xmlns="http://www.w3.org/2000/svg"
+        fill={color || "rgba(255, 255, 255, 0.5)"}
+      >
+        <path d="M7.53906 61.8828H0.078125L22.4609 0.125H29.9219L7.53906 61.8828ZM53.4922 61.8828H46.0312L68.4141 0.125H75.875L53.4922 61.8828Z" />
+      </svg>
     </Box>
   );
 };
