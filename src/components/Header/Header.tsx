@@ -41,8 +41,13 @@ const Header = () => {
         })}
       >
         {/* Topbar */}
-        <Flex sx={{ justifyContent: "space-between", alignItems: "center" }}>
-          <Logo />
+        <Flex
+          sx={{
+            justifyContent: ["center", "space-between"],
+            alignItems: "center",
+          }}
+        >
+          <Logo display={["none", "block"]} />
 
           <Menu>
             {menuItems.map((item) => (
@@ -56,15 +61,17 @@ const Header = () => {
         {/* Logo and Name */}
         <Flex
           sx={{
+            flexDirection: ["column", "row"],
             justifyContent: "center",
             alignItems: "center",
-            color: "white",
             marginTop: "50px",
+            color: "white",
+            textAlign: ["center", "left"],
           }}
         >
           <Logo fontSize={8} color="white" />
 
-          <Flex sx={{ flexDirection: "column", marginLeft: "20px" }}>
+          <Flex sx={{ flexDirection: "column", marginLeft: ["0", "20px"] }}>
             <Heading as="h1" sx={{ fontWeight: "500" }}>
               The Devs
             </Heading>
