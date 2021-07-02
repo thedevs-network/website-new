@@ -4,6 +4,7 @@ export const Menu = styled.ul`
   list-style: none;
   display: flex;
   margin: 0;
+  padding: 0;
 `;
 
 export const MenuItem = styled.li`
