@@ -16,6 +16,13 @@ const MainWrapper: FC = ({ children }) => {
           body: {
             backgroundColor: theme.colors.background,
           },
+          a: {
+            textDecoration: "none",
+            color: "white",
+            ":hover": {
+              color: theme.colors.main,
+            },
+          },
         })}
       />
       {children}
