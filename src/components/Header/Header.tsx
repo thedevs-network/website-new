@@ -4,27 +4,7 @@ import { jsx, Flex, Heading, Paragraph } from "theme-ui";
 
 import Logo from "../Logo";
 import Wave from "./Wave";
-import { Menu, MenuItem } from "./styled";
-import { TMenuItem } from "./types";
-
-const menuItems: TMenuItem[] = [
-  {
-    title: "join",
-    path: "join",
-  },
-  {
-    title: "projects",
-    path: "projects",
-  },
-  {
-    title: "github",
-    path: "github",
-  },
-  {
-    title: "contact",
-    path: "contact",
-  },
-];
+import Menu from "./Menu";
 
 const Header = () => {
   return (
@@ -37,7 +17,7 @@ const Header = () => {
           width: "100%",
           height: "auto",
           zIndex: 1,
-          py: [2, 3, 4],
+          pt: [2, 3, 4],
           px: [3, 4, 5, 6],
         })}
       >
@@ -48,15 +28,8 @@ const Header = () => {
             alignItems: "center",
           }}
         >
-          <Logo display={["none", "block"]} />
-
-          <Menu>
-            {menuItems.map((item) => (
-              <MenuItem key={item.path}>
-                <a href={item.path}>{item.title}</a>
-              </MenuItem>
-            ))}
-          </Menu>
+          <Logo display={["none", "block"]} color="headerLogo" />
+          <Menu />
         </Flex>
 
         {/* Logo and Name */}
@@ -65,19 +38,33 @@ const Header = () => {
             flexDirection: ["column", "row"],
             justifyContent: "center",
             alignItems: "center",
-            marginTop: "50px",
+            mt: 5,
             color: "white",
             textAlign: ["center", "left"],
           }}
         >
-          <Logo size={80} color="white" />
+          <Logo size={80} color="headerBigLogo" />
 
-          <Flex sx={{ flexDirection: "column", marginLeft: ["0", "25px"] }}>
-            <Heading as="h1" sx={{ fontWeight: "500" }}>
+          <Flex sx={{ flexDirection: "column", ml: [0, 5] }}>
+            <Heading
+              as="h1"
+              sx={{
+                fontWeight: "body",
+                color: "headerText",
+                fontSize: "36px",
+              }}
+            >
               The Devs
             </Heading>
 
-            <Paragraph sx={{ marginTop: "15px", fontWeight: "300" }}>
+            <Paragraph
+              sx={{
+                mt: 2,
+                fontWeight: "body",
+                color: "headerText",
+                fontSize: 2,
+              }}
+            >
               developers community on Telegram
             </Paragraph>
           </Flex>

@@ -8,11 +8,7 @@ const Wave = () => {
   return (
     <Box
       sx={{
-        transform: [
-          "translateY(-20px)",
-          "translateY(-70px)",
-          "translateY(-100px)",
-        ],
+        transform: "translateY(-30%)",
       }}
     >
       <svg

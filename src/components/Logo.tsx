@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, ThemeUIStyleObject } from "theme-ui";
+import { jsx, Box } from "theme-ui";
 
 interface Props {
   size?: number;
@@ -24,7 +24,7 @@ const Logo = ({ size = 25, color, display }: Props) => {
         height="100%"
         viewBox="0 0 76 62"
         xmlns="http://www.w3.org/2000/svg"
-        fill={color || "rgba(255, 255, 255, 0.5)"}
+        sx={{ fill: color }}
       >
         <path d="M7.53906 61.8828H0.078125L22.4609 0.125H29.9219L7.53906 61.8828ZM53.4922 61.8828H46.0312L68.4141 0.125H75.875L53.4922 61.8828Z" />
       </svg>
