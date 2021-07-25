@@ -22,8 +22,10 @@ const Menu = () => {
     <Flex as="ul" m={0} p={0} sx={{ listStyle: "none" }}>
       {ITEMS.map((item) => (
         <Flex
+          key={item.text}
           as="li"
           sx={{
+            fontSize: [0, 1, 2],
             alignItems: "center",
             color: "headerLink",
             a: {

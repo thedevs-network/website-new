@@ -2,7 +2,7 @@
 import { jsx, Box } from "theme-ui";
 
 interface Props {
-  size?: number;
+  size?: number | number[];
   color?: string;
   display?: string | string[];
 }
@@ -12,8 +12,8 @@ const Logo = ({ size = 25, color, display }: Props) => {
     <Box
       sx={{
         display,
-        height: `${size}px`,
-        width: `${size}px`,
+        height: size,
+        width: size,
         letterSpacing: 0,
         fontWeight: "body",
       }}

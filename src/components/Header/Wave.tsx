@@ -8,14 +8,14 @@ const Wave = () => {
   return (
     <Box
       sx={{
-        transform: "translateY(-30%)",
+        mt: "-10%",
       }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
         height="100%"
-        viewBox="0 0 1440 400"
+        viewBox="0 0 1440 300"
       >
         <defs>
           <linearGradient id="gradient">

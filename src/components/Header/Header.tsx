@@ -17,7 +17,7 @@ const Header = () => {
           width: "100%",
           height: "auto",
           zIndex: 1,
-          pt: [2, 3, 4],
+          pt: [1, 2, 3, 4],
           px: [3, 4, 5, 6],
         })}
       >
@@ -38,31 +38,33 @@ const Header = () => {
             flexDirection: ["column", "row"],
             justifyContent: "center",
             alignItems: "center",
-            mt: 5,
+            mt: [2, 4, 5],
+            pt: [4, 0],
+            pb: [4, 3, 2],
             color: "white",
             textAlign: ["center", "left"],
           }}
         >
-          <Logo size={80} color="headerBigLogo" />
-
-          <Flex sx={{ flexDirection: "column", ml: [0, 5] }}>
+          <Logo size={[50, 60, 70]} color="headerBigLogo" />
+          <Flex
+            sx={{ flexDirection: "column", ml: [0, 4, "40px"], mt: [3, 0] }}
+          >
             <Heading
               as="h1"
               sx={{
                 fontWeight: "body",
                 color: "headerText",
-                fontSize: "36px",
+                fontSize: [3, 4, 5],
               }}
             >
               The Devs
             </Heading>
-
             <Paragraph
               sx={{
-                mt: 2,
-                fontWeight: "body",
+                mt: [1, 2],
+                fontWeight: "light",
                 color: "headerText",
-                fontSize: 2,
+                fontSize: [0, 2],
               }}
             >
               developers community on Telegram
@@ -70,6 +72,7 @@ const Header = () => {
           </Flex>
         </Flex>
       </Flex>
+
       <Wave />
     </Fragment>
   );
