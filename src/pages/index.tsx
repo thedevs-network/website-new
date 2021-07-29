@@ -1,7 +1,8 @@
 /** @jsx jsx */
-import { Box, Flex, Heading, jsx, Paragraph } from "theme-ui";
+import { Box, Flex, Heading, jsx, Paragraph, Divider } from "theme-ui";
 
 import promoImage from "../images/telegram-placeholder.png";
+import { Users as UsersIcon } from "../components/Icons";
 import { SubscribeButton } from "../components/Button";
 import MainWrapper from "../components/MainWrapper";
 import { Section } from "../components/Layout";
@@ -35,9 +36,7 @@ const IndexPage = () => {
             <SubscribeButton
               path="https://t.me/thedevs"
               sx={{ alignSelf: "flex-start" }}
-            >
-              + Subscribe
-            </SubscribeButton>
+            />
           </Flex>
           <Flex
             sx={{
@@ -50,6 +49,30 @@ const IndexPage = () => {
           </Flex>
         </Flex>
       </Section>
+
+      <Section>
+        <Box sx={{ width: "100%", my: 4 }}>
+          <Divider sx={{ width: "100%" }} />
+        </Box>
+      </Section>
+
+      <Section>
+        <Flex sx={{ flexDirection: "column", alignItems: "center" }}>
+          <UsersIcon sx={{ width: 40, height: "auto", fill: "muted.2" }} />
+          <Heading as="h2" sx={{ textAlign: "center", my: 3 }}>
+            groups.
+          </Heading>
+          <Paragraph
+            sx={{ textAlign: "center", maxWidth: "90%", width: "600px" }}
+          >
+            With each group dediated to a topic, we aim to gather developrs to
+            help them chat and discuss things they love in a well moderated
+            place.
+          </Paragraph>
+        </Flex>
+      </Section>
+
+      <Box sx={{ mb: 8 }} />
     </MainWrapper>
   );
 };

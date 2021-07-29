@@ -30,23 +30,33 @@ const theme = {
     text: "#4a4a4a",
     primary: "#03A9F4",
     primaryLight: "#69D0FE",
-    muted: "#f6f6f6",
+    muted: ["#f6f6f6", "#dfdfdf", "D2D2D2"],
   },
   links: {
     subscribe: {
+      position: "relative",
+      overflow: "hidden",
+      display: "flex",
+      alignItems: "center",
+      width: "auto",
       px: "20px",
       py: "6px",
       fontWeight: "body",
       letterSpacing: 0,
       fontSize: 1,
-      display: "flex",
-      width: "auto",
       color: "primary",
       textTransform: "uppercase",
       borderWidth: 1,
       borderStyle: "solid",
       borderColor: "primaryLight",
       borderRadius: 6,
+      transition: "all 0.2s ease-in",
+      svg: { fill: "primary" },
+      ":hover": {
+        backgroundColor: "primary",
+        color: "white",
+        transform: "translateY(-2px)",
+      },
     },
   },
   styles: {
@@ -116,6 +126,10 @@ const theme = {
     code: {
       fontFamily: "monospace",
       fontSize: "inherit",
+    },
+    hr: {
+      borderColor: "muted.1",
+      borderWidth: "1px",
     },
     table: {
       width: "100%",
