@@ -22,6 +22,7 @@ export const SubscribeButton: FC<SubscribeButtonProps> = ({
       rel="noopener noreferrer"
       variant="subscribe"
       sx={{
+        ...(!showSubscribeText && { px: 3, py: 1 }),
         ":hover": {
           "svg.main": {
             transform: "translateY(-30px)",
@@ -45,7 +46,7 @@ export const SubscribeButton: FC<SubscribeButtonProps> = ({
             left: 0,
             width: 18,
             height: 18,
-            ml: 1,
+            ml: showSubscribeText ? 1 : 0,
             transition: "all 0.3s ease-in",
           },
           ".hovered": {

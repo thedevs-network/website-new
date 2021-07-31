@@ -30,7 +30,7 @@ const theme = {
     text: "#4a4a4a",
     primary: "#03A9F4",
     primaryLight: "#69D0FE",
-    muted: ["#f6f6f6", "#dfdfdf", "D2D2D2"],
+    muted: ["#f6f6f6", "#dfdfdf", "#d2d2d2", "#d7d7d7", "#b2b2b2"],
   },
   links: {
     subscribe: {

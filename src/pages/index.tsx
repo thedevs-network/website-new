@@ -7,6 +7,8 @@ import { SubscribeButton } from "../components/Button";
 import MainWrapper from "../components/MainWrapper";
 import { Section } from "../components/Layout";
 import Header from "../components/Header";
+import Group from "../components/Group";
+import { groups } from "../consts";
 
 const IndexPage = () => {
   return (
@@ -69,6 +71,27 @@ const IndexPage = () => {
             help them chat and discuss things they love in a well moderated
             place.
           </Paragraph>
+        </Flex>
+
+        <Flex
+          sx={{
+            width: "100%",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            mt: 5,
+            "> div": {
+              width: "30%",
+              flex: "1 1 auto",
+              mb: 4,
+              ":nth-child(3n - 2)": { pr: "20px" },
+              ":nth-child(3n - 1)": { px: "10px" },
+              ":nth-child(3n)": { pl: "20px" },
+            },
+          }}
+        >
+          {groups.map((group) => (
+            <Group {...group} />
+          ))}
         </Flex>
       </Section>
 
