@@ -2,7 +2,11 @@
 import { Box, Flex, Heading, jsx, Paragraph, Divider } from "theme-ui";
 import { useBreakpointIndex } from "@theme-ui/match-media";
 
-import { Clipboard, Users as UsersIcon } from "../components/Icons";
+import {
+  Clipboard as ClipboardIcon,
+  Lightbulb as LightbulbIcon,
+  Users as UsersIcon,
+} from "../components/Icons";
 import { SubscribeButton } from "../components/Button";
 import MainWrapper from "../components/MainWrapper";
 import { Section } from "../components/Layout";
@@ -165,9 +169,36 @@ const IndexPage = () => {
               sx={{ alignSelf: ["center", "flex-start"] }}
             />
           </Flex>
-          <Flex sx={{ width: ["120px", "200px"] }}>
-            <Clipboard sx={{ width: "198px", height: "auto" }} />
+          <Flex sx={{ width: ["120px", "190px"] }}>
+            <ClipboardIcon sx={{ width: "188px", height: "auto" }} />
           </Flex>
+        </Flex>
+      </Section>
+
+      <Box sx={{ my: 5 }} />
+
+      <Section>
+        <Flex sx={{ flexDirection: "column", alignItems: "center" }}>
+          <LightbulbIcon
+            sx={{ width: [32, 40], height: "auto", fill: "muted.2" }}
+          />
+          <Heading
+            as="h2"
+            sx={{ fontSize: [3, 3, 4], textAlign: "center", my: [2, 3] }}
+          >
+            projects.
+          </Heading>
+          <Paragraph
+            sx={{
+              fontSize: [1, 1, 2],
+              textAlign: "center",
+              maxWidth: "100%",
+              width: "600px",
+              px: [4, 3],
+            }}
+          >
+            We are an open source community. Here’s the proof.
+          </Paragraph>
         </Flex>
       </Section>
 
