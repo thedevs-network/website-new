@@ -54,7 +54,7 @@ const Header = () => {
               sx={{
                 fontWeight: "body",
                 color: "headerText",
-                fontSize: [3, 4, 5],
+                fontSize: [4, 4, 5],
               }}
             >
               The Devs
@@ -64,7 +64,7 @@ const Header = () => {
                 mt: [1, 2],
                 fontWeight: "light",
                 color: "headerText",
-                fontSize: [0, 2],
+                fontSize: [1, 2],
               }}
             >
               developers community on Telegram

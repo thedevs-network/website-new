@@ -7,12 +7,14 @@ import { Telegram } from "./Icons";
 type SubscribeButtonProps = ComponentProps<typeof Link> & {
   path: string;
   showSubscribeText?: boolean;
+  variant?: "subscribe" | "subscribeDark";
 };
 
 export const SubscribeButton: FC<SubscribeButtonProps> = ({
   path,
   children,
   showSubscribeText = true,
+  variant = "subscribe",
   ...rest
 }) => {
   return (
@@ -20,10 +22,27 @@ export const SubscribeButton: FC<SubscribeButtonProps> = ({
       href={path}
       target="_blank"
       rel="noopener noreferrer"
-      variant="subscribe"
+      variant={variant}
       sx={{
+        position: "relative",
+        overflow: "hidden",
+        display: "flex",
+        alignItems: "center",
+        width: "auto",
+        px: "20px",
+        py: "6px",
+        fontWeight: "body",
+        letterSpacing: 0,
+        fontSize: 1,
+        textTransform: "uppercase",
+        borderWidth: 1,
+        borderStyle: "solid",
+        borderRadius: 6,
+        transition: "all 0.2s ease-in",
         ...(!showSubscribeText && { px: 3, py: 1 }),
         ":hover": {
+          transform: "translateY(-2px)",
+
           "svg.main": {
             transform: "translateY(-30px)",
           },
