@@ -4,7 +4,7 @@ import { jsx, Flex } from "theme-ui";
 const ITEMS = [
   {
     text: "projects",
-    path: "projects",
+    path: "#projects",
   },
   {
     text: "github",

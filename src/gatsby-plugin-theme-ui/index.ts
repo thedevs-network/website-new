@@ -21,6 +21,7 @@ const theme = {
   colors: {
     background: "#f5f5f5",
     backgroundJobs: "#27F3F3",
+    backgroundFooter: "#131313",
     gradientPrimary: "#952ae5",
     gradientSecondary: "#6469c2",
     headerLink: "rgba(233, 233, 233, 0.8)",
@@ -29,6 +30,8 @@ const theme = {
     headerBigLogo: "rgba(244, 244, 244, 1)",
     headerText: "white",
     text: "#4a4a4a",
+    link: "#6a6a6a",
+    linkHover: "#000000",
     primary: "#03A9F4",
     primaryLight: "#69D0FE",
     muted: ["#f6f6f6", "#dfdfdf", "#d2d2d2", "#d7d7d7", "#b2b2b2"],
@@ -108,7 +111,17 @@ const theme = {
       lineHeight: "body",
     },
     a: {
-      color: "primary",
+      display: "inline-block",
+      color: "link",
+      borderWidth: 0,
+      borderBottomWidth: 1,
+      borderStyle: "dotted",
+      borderColor: "muted.4",
+      transition: "0.2s all ease",
+      ":hover": {
+        color: "linkHover",
+        borderColor: "linkHover",
+      },
     },
     pre: {
       fontFamily: "monospace",

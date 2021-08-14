@@ -10,11 +10,13 @@ import {
 import { SubscribeButton } from "../components/Button";
 import MainWrapper from "../components/MainWrapper";
 import { Section } from "../components/Layout";
+import Project from "../components/Project";
 import Header from "../components/Header";
 import Group from "../components/Group";
-import { groups } from "../consts";
+import { groups, projects } from "../consts";
 
 import promoImage from "../images/telegram-placeholder.png";
+import Footer from "../components/Footer";
 
 const IndexPage = () => {
   const breakpointIndex = useBreakpointIndex();
@@ -175,9 +177,9 @@ const IndexPage = () => {
         </Flex>
       </Section>
 
-      <Box sx={{ my: 5 }} />
+      <Box sx={{ my: "5" }} />
 
-      <Section>
+      <Section id="projects">
         <Flex sx={{ flexDirection: "column", alignItems: "center" }}>
           <LightbulbIcon
             sx={{ width: [32, 40], height: "auto", fill: "muted.2" }}
@@ -200,9 +202,27 @@ const IndexPage = () => {
             We are an open source community. Here’s the proof.
           </Paragraph>
         </Flex>
+
+        <Flex
+          sx={{ justifyContent: "space-between", flexWrap: "wrap", mt: [5] }}
+        >
+          {projects.map((project) => (
+            <Flex sx={{ flex: "1 1 auto", width: ["33.33%"] }}>
+              <Project
+                icon={project.icon}
+                name={project.name}
+                links={project.links}
+              >
+                {project.description}
+              </Project>
+            </Flex>
+          ))}
+        </Flex>
       </Section>
 
-      <Box sx={{ mb: 8 }} />
+      <Box sx={{ my: "100px" }} />
+
+      <Footer />
     </MainWrapper>
   );
 };

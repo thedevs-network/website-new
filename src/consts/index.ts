@@ -20,6 +20,8 @@ import DartFlutter from "../images/dartflutter.jpg";
 import Kotlin from "../images/kotlin.jpg";
 import Rust from "../images/rust.jpg";
 
+import { linkIcons, projectIcons as projectIcons } from "../components/Project";
+
 export const groups: {
   title: string;
   members: number;
@@ -151,5 +153,75 @@ export const groups: {
     members: 450,
     image: Rust,
     path: "https://t.me/joinchat/R8v3cmKgpgnW6HGk",
+  },
+];
+
+interface Project {
+  icon: keyof typeof projectIcons;
+  name: string;
+  description: string;
+  links: {
+    text: string;
+    title: string;
+    icon: keyof typeof linkIcons;
+    path: string;
+  }[];
+}
+
+export const projects: Project[] = [
+  {
+    icon: "kutt",
+    name: "Kutt",
+    description:
+      "A modern URL shortener with support for custom domains, managing links, stats and more.",
+    links: [
+      { text: "Website", title: "Kutt", icon: "link", path: "https://kutt.it" },
+      {
+        text: "GitHub",
+        title: "Kutt source code on GitHub",
+        icon: "github",
+        path: "https://github.com/thedevs-network/kutt",
+      },
+    ],
+  },
+  {
+    icon: "guard",
+    name: "The Guard Bot",
+    description:
+      "A modern URL shortener with support for custom domains, managing links, stats and more.",
+    links: [
+      {
+        text: "Telegram",
+        title: "The Devs Bot",
+        icon: "link",
+        path: "https://t.me/thedevs_bot",
+      },
+      {
+        text: "GitHub",
+        title: "The Guard Bot source code on GitHub",
+        icon: "github",
+        path: "https://github.com/TheDevs-Network/the-guard-bot",
+      },
+    ],
+  },
+  {
+    icon: "tgdr",
+    name: "Telegram Directory",
+    description:
+      "Discover the content you love on Telegram by browsing top, hot and new channels, bots and groups.",
+    links: [
+      {
+        text: "Website",
+        title: "Telegram Directory",
+        icon: "link",
+        path: "https://tgdr.io/",
+      },
+      {
+        text: "GitHub",
+        title: "Telegram Directory source code on GitHub",
+        icon: "github",
+        path: "https://github.com/thedevs-network/tgdr",
+      },
+    ],
   },
 ];
