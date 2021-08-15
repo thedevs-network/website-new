@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { Fragment } from "React";
+import { Fragment } from "react";
 import { jsx, Flex, Heading, Paragraph } from "theme-ui";
 
 import Logo from "../Logo";
