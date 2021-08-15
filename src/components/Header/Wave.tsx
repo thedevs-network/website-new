@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { useTheme } from "@emotion/react";
-import { jsx, Box, SxProp } from "theme-ui";
+import { jsx, Box } from "theme-ui";
 
 const Wave = () => {
   const theme = useTheme();

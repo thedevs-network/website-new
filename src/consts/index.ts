@@ -204,7 +204,7 @@ export const projects: Project[] = [
     icon: "guard",
     name: "The Guard Bot",
     description:
-      "A modern URL shortener with support for custom domains, managing links, stats and more.",
+      "A Telegram bot made to help administrators to moderate groups and keep them spam-free.",
     links: [
       {
         text: "Telegram",
