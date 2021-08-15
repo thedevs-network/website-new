@@ -204,10 +204,23 @@ const IndexPage = () => {
         </Flex>
 
         <Flex
-          sx={{ justifyContent: "space-between", flexWrap: "wrap", mt: [5] }}
+          sx={{
+            justifyContent: "space-between",
+            flexDirection: ["column", "row"],
+            flexWrap: "wrap",
+            mt: [5],
+            px: [3, 3, 0, 0],
+          }}
         >
           {projects.map((project) => (
-            <Flex sx={{ flex: "1 1 auto", width: ["33.33%"] }}>
+            <Flex
+              sx={{
+                flex: "1 1 auto",
+                width: ["100%", "33.33%"],
+                mb: [5, 0],
+                ":last-child": { mb: 0 },
+              }}
+            >
               <Project
                 icon={project.icon}
                 name={project.name}

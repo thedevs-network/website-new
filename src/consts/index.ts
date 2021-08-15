@@ -22,6 +22,22 @@ import Rust from "../images/rust.jpg";
 
 import { linkIcons, projectIcons as projectIcons } from "../components/Project";
 
+export const menu = [
+  {
+    text: "projects",
+    path: "#projects",
+  },
+  {
+    text: "github",
+    path: "https://github.com/thedevs-network",
+    newTab: true,
+  },
+  {
+    text: "contact",
+    path: "mailto:hi@pouria.dev",
+  },
+];
+
 export const groups: {
   title: string;
   members: number;

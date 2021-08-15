@@ -1,26 +1,12 @@
 /** @jsx jsx */
 import { jsx, Flex } from "theme-ui";
 
-const ITEMS = [
-  {
-    text: "projects",
-    path: "#projects",
-  },
-  {
-    text: "github",
-    path: "github",
-    newTab: true,
-  },
-  {
-    text: "contact",
-    path: "contact",
-  },
-];
+import { menu } from "../../consts";
 
 const Menu = () => {
   return (
     <Flex as="ul" m={0} p={0} sx={{ listStyle: "none" }}>
-      {ITEMS.map((item) => (
+      {menu.map((item) => (
         <Flex
           key={item.text}
           as="li"

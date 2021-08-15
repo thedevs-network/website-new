@@ -47,10 +47,10 @@ const Project: FC<Props> = (props) => {
       >
         {projectIcons[props.icon]}
       </Flex>
-      <Heading as="h3" sx={{ fontSize: ["18px"], mt: "54px" }}>
+      <Heading as="h3" sx={{ fontSize: ["18px"], mt: [4, "54px"] }}>
         {props.name}
       </Heading>
-      <Paragraph sx={{ fontSize: ["15px"], mt: [3], pr: 3 }}>
+      <Paragraph sx={{ fontSize: ["15px"], mt: [2, 3], pr: 3 }}>
         {props.children}
       </Paragraph>
       <Flex>
@@ -59,7 +59,7 @@ const Project: FC<Props> = (props) => {
             sx={{
               alignItems: "center",
               alignSelf: "flex-start",
-              mt: 3,
+              mt: [2, 3],
               mr: 3,
               svg: { maxWidth: ["16px"], maxHeight: ["16px"], mr: 2 },
             }}

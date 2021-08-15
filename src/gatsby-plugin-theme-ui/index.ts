@@ -30,6 +30,7 @@ const theme = {
     headerBigLogo: "rgba(244, 244, 244, 1)",
     headerText: "white",
     text: "#4a4a4a",
+    textFooter: "#959595",
     link: "#6a6a6a",
     linkHover: "#000000",
     primary: "#03A9F4",
