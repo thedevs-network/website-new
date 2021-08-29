@@ -13,6 +13,7 @@ import { Section } from "../components/Layout";
 import Project from "../components/Project";
 import Header from "../components/Header";
 import Group from "../components/Group";
+import Meta from "../components/Meta";
 import { groups, projects } from "../consts";
 
 import promoImage from "../images/telegram-placeholder.png";
@@ -23,6 +24,8 @@ const IndexPage = () => {
 
   return (
     <MainWrapper>
+      <Meta />
+
       <Header />
 
       <Section>
