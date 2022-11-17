@@ -16,6 +16,7 @@ const MainWrapper: FC = ({ children }) => {
         styles={(theme) => ({
           body: {
             backgroundColor: theme.colors.background,
+            background: theme.background,
           },
           a: {
             textDecoration: "none",

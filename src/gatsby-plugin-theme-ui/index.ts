@@ -18,6 +18,8 @@ const theme = {
     heading: 1.125,
   },
   letterSpacings: ["0.05em"],
+  background:
+    "linear-gradient(356deg, rgba(255,255,255,1) 0%, rgba(247,238,255,0.9387955865940126) 35%, rgba(255,255,255,1) 100%);",
   colors: {
     background: "#f5f5f5",
     backgroundJobs: "#27F3F3",
@@ -35,7 +37,7 @@ const theme = {
     linkHover: "#000000",
     primary: "#03A9F4",
     primaryLight: "#69D0FE",
-    muted: ["#f6f6f6", "#dfdfdf", "#d2d2d2", "#d7d7d7", "#b2b2b2"],
+    muted: ["#f6f6f6", "#dfdfdf", "#d2d2d2", "#d7d7d7", "#bfbfbf"],
   },
   links: {
     subscribe: {

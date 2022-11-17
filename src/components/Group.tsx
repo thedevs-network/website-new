@@ -51,13 +51,13 @@ const Group = (props: typeof groups[number]) => {
               svg: {
                 width: "12px",
                 height: "auto",
-                color: "muted.3",
+                color: "muted.4",
                 mb: "2px",
               },
             }}
           >
             <SingleUser />
-            <span sx={{ ml: 1, color: "muted.2", fontSize: 1 }}>
+            <span sx={{ ml: 1, color: "muted.4", fontSize: 1 }}>
               +{props.members}
             </span>
           </Flex>
