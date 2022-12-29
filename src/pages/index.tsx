@@ -53,10 +53,10 @@ const IndexPage = () => {
               we connect developers together.
             </Heading>
             <Paragraph sx={{ fontSize: [1, 1, 2], mb: [3, 3, "40px"] }}>
-              The Devs is a set of coding and design groups on Telegram which
-              allows developers to communicate with each other freely and
-              safely. Subscribe to our channel for daily development resources,
-              tutorials and news.
+              The Devs is a set of programming and design groups on Telegram
+              that provides a spam-free discussion space for developers to
+              communicate and connect with each other. Subscribe to our channel
+              for daily development and design resources, tutorials, and news.
             </Paragraph>
             <SubscribeButton
               path="https://t.me/thedevs"

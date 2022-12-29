@@ -2,6 +2,9 @@ module.exports = {
   siteMetadata: {
     title: "The Devs Network",
   },
+  flags: {
+    DEV_SSR: false,
+  },
   plugins: [
     "gatsby-plugin-react-helmet",
     {
