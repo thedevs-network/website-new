@@ -168,7 +168,7 @@ const IndexPage = () => {
               oppurtuinites submitted by our members from across the globe.
             </Paragraph>
             <SubscribeButton
-              path="#"
+              path="https://t.me/thehire"
               title="The Hire Channel"
               variant="subscribeDark"
               sx={{ alignSelf: ["center", "flex-start"] }}
