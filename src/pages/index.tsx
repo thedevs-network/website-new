@@ -53,9 +53,9 @@ const IndexPage = () => {
               we connect developers together.
             </Heading>
             <Paragraph sx={{ fontSize: [1, 1, 2], mb: [3, 3, "40px"] }}>
-              The Devs is a set of programming and design groups on Telegram
+              The Devs is a collection of Programming and Design groups on Telegram
               that provides a spam-free discussion space for developers to
-              communicate and connect with each other. Subscribe to our channel
+              communicate and connect with each other. Subscribe to our Telegram channel
               for daily development and design resources, tutorials, and news.
             </Paragraph>
             <SubscribeButton
@@ -104,9 +104,8 @@ const IndexPage = () => {
               px: [4, 3],
             }}
           >
-            With each group dediated to a topic, we aim to gather developrs to
-            help them chat and discuss things they love in a well moderated
-            place.
+            With each group dedicated to a specific topic, we aim to gather developers and discuss things 
+            they love in a moderated platform.
           </Paragraph>
         </Flex>
 
@@ -164,8 +163,8 @@ const IndexPage = () => {
           >
             <Heading sx={{ fontSize: [3, 3, 4], mb: [3, 4] }}>jobs.</Heading>
             <Paragraph sx={{ fontSize: [1, 1, 2], mb: [3, 4] }}>
-              Join our channel called The Hire, where you can find job
-              oppurtuinites submitted by our members from across the globe.
+              Join our channel, <b>The Hire</b>, where you can find job
+              opportunities submitted by our members from across the globe.
             </Paragraph>
             <SubscribeButton
               path="https://t.me/thehire"
@@ -202,7 +201,7 @@ const IndexPage = () => {
               px: [4, 3],
             }}
           >
-            We are an open source community. Here’s the proof.
+            We are an open source community. Here's the proof.
           </Paragraph>
         </Flex>
 
