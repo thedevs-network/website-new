@@ -149,7 +149,7 @@ export const projects: Project[] = [
     description:
       "A modern URL shortener with support for custom domains, managing links, stats and more.",
     links: [
-      { text: "Website", title: "Kutt", icon: "link", path: "https://kutt.it" },
+      { text: "Website", title: "Kutt", icon: "link", path: "https://kutt.to" },
       {
         text: "GitHub",
         title: "Kutt source code on GitHub",
