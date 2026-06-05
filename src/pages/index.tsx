@@ -104,7 +104,7 @@ const IndexPage = () => {
               px: [4, 3],
             }}
           >
-            With each group dediated to a topic, we aim to gather developrs to
+            With each group dedicated to a topic, we aim to gather developers to
             help them chat and discuss things they love in a well moderated
             place.
           </Paragraph>
@@ -165,7 +165,7 @@ const IndexPage = () => {
             <Heading sx={{ fontSize: [3, 3, 4], mb: [3, 4] }}>jobs.</Heading>
             <Paragraph sx={{ fontSize: [1, 1, 2], mb: [3, 4] }}>
               Join our channel called The Hire, where you can find job
-              oppurtuinites submitted by our members from across the globe.
+              opportunities submitted by our members from across the globe.
             </Paragraph>
             <SubscribeButton
               path="https://t.me/thehire"
